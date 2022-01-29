@@ -16,6 +16,8 @@
 - Ionic (UI kit)
 - React Native or Electron (framework for mobile app)
 
+---
+
 ## Softwares to use
 
 - Visual Studio Code (front-end)
@@ -33,6 +35,8 @@
 - manage the shop (see “product properties”)
 - write the FAQ section
 
+---
+
 ## Visitor account
 
 - visit the shop
@@ -42,6 +46,8 @@
 - put some product in the shopping cart
 - create an user account
 
+---
+
 ## User account
 
 - all visitor account privileges above
@@ -49,6 +55,8 @@
 - receive email confirmation
 - cancel or edit his reservation
 - leave reviews after the rent
+
+---
 
 ## product properties
 
@@ -58,6 +66,8 @@
 - availabilities
 - description
 - instructions (PDF to download or a nice template page)
+
+---
 
 ## Calendar
 
@@ -87,3 +97,5 @@
 - product table (name, rates, pictures…)
 - review table (who wrote, content, date of publication)
 - user shopping cart (products with date of booking)
+
+---
