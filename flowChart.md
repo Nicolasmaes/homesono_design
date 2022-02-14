@@ -1,12 +1,12 @@
 ```mermaid
 graph TD
-    A[USER_VISITOR] --> |Log in|B(Access the app)
+    A[USER_VISITOR] --> B(Access the app)
     B --> C[Visit the shop]
-    B --> D(contact the manager)
-    B --> E(access the FAQ section)
-    B --> F(browse product availabilities)
-    B --> G(fill the shopping cart)
-    B --> H(create a user account)
+    B --> D(Contact the manager)
+    B --> E(Access the FAQ section)
+    B --> F(Browse product availabilities)
+    B --> G(Fill the shopping cart)
+    B --> H(Create a user account)
 ```
 ```mermaid
 graph TD
