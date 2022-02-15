@@ -1,25 +1,5 @@
-# HomeSono
-
-## [Training roadmap](https://gitlab.com/ofp-oc-cda2/ressources/-/blob/main/Formation/Programme.md)
-## [Directive](https://gitlab.com/ofp-oc-cda2/ressources/-/blob/main/Formation/Fil%20rouge.md#livrables)
-#
-
-# Summary
-
- - [First brainstorm](#first-brainstorm)
- - [Diagrams](#diagrams)
-    - [MCD](#MCD)
-    -  [MLD](#MLD)
-    - [Flow Chart](#flow-chart)
-# 
-
- # First brainstorm
-- [My project on Notion, easier to read and edit](https://nicolasmaesfr.notion.site/HomeSono-32fc326f03b54eed987b3ba9d79fd54c)
-- [the markdown on GitLab](design_first_brainstorm.md)
-#
-
-# Diagrams
 # MCD
+
 ```mermaid
 classDiagram
 
@@ -72,8 +52,8 @@ classDiagram
     }
 ```
 # 
-
 # MLD
+
 ```mermaid
 classDiagram
 
@@ -139,8 +119,8 @@ classDiagram
     }
 ```
 #
-
 # Flow Chart
+
 ```mermaid
 graph TD
     A[USER_VISITOR] --> B(Access the app)
@@ -168,6 +148,3 @@ A[USER_ADMIN]-->|Log in| B(Access the dashboard)
     B--> F(Get message from USERS)
     B--> G(Manage the shop)
 ```
-#
-
-# Other diagrams
