@@ -8,14 +8,14 @@
 
  - [First brainstorm](#first-brainstorm)
  - [Diagrams](#diagrams)
-    - [MCD](#MCD)
-    -  [MLD](#MLD)
+    - [MCD](#mcd)
+    -  [MLD](#mld)
     - [Flow Chart](#flow-chart)
 # 
 
  # First brainstorm
 - [My project on Notion, easier to read and edit](https://nicolasmaesfr.notion.site/HomeSono-32fc326f03b54eed987b3ba9d79fd54c)
-- [the markdown on GitLab](design_first_brainstorm.md)
+- [the markdown on GitLab](markdown_files/design_first_brainstorm.md)
 #
 
 # Diagrams
