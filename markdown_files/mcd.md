@@ -6,7 +6,9 @@ classDiagram
     Users -->  "1..1" Users_roles : has
     Bookings --> "1..*" Products : contains
     Bookings --> "1..1" Users : is made by
+    Reviews --> "1..1" Users : is made by
     Users  --> "1..*" Bookings : can make
+    Users  --> "1..*" Reviews : can make
     Products "0..*" -->  "1..*" Categories : belongs
 
     class Users{
@@ -49,6 +51,14 @@ classDiagram
         messageFromGuest
         responseFromSeller
         status
+    }
+    class Reviews{
+        id
+        guest_name
+        id_product
+        content
+        mark
+        verified
     }
 ```
 # 

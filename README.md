@@ -26,7 +26,9 @@ classDiagram
     Users -->  "1..1" Users_roles : has
     Bookings --> "1..*" Products : contains
     Bookings --> "1..1" Users : is made by
+    Reviews --> "1..1" Users : is made by
     Users  --> "1..*" Bookings : can make
+    Users  --> "1..*" Reviews : can make
     Products "0..*" -->  "1..*" Categories : belongs
 
     class Users{
@@ -70,6 +72,14 @@ classDiagram
         responseFromSeller
         status
     }
+    class Reviews{
+        id
+        guest_name
+        id_product
+        content
+        mark
+        verified
+    }
 ```
 # 
 
@@ -83,6 +93,7 @@ classDiagram
         categories_products  --> categories : gets PK from
         bookings  --> users : gots PK from
         bookings  --> products : gets PK from
+        reviews  --> bookings : gets PK from
 
 
     class users{
@@ -127,7 +138,7 @@ classDiagram
 
     class bookings{
         BKG_ID_BKG_PK
-        BKG_ID_USER_USR_FK
+        BKG_IDUSER_USR_FK
         BKG_IDPRODUCT_PRO_FK
         BKG_PICKUPDATE_BKG
         BKG_DROPOFFDATE_BKG
@@ -136,6 +147,13 @@ classDiagram
         BKG_STATUS_BKG
         BKG_ISPROCESSED_BKG
         BKG_CLIENTREACHED_BKG
+    }
+    class reviews{
+        REV_ID_REV_PK
+        REV_IDBOOKING_BKG_FK
+        REV_CONTENT_REV
+        REV_MARK_REV
+        REV_VERIFIED_REV
     }
 ```
 #
