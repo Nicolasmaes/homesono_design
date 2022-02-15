@@ -43,7 +43,7 @@
 - contact the manager
 - access the FAQ section
 - browse product availabilities
-- put some product in the shopping cart
+- put products in the shopping cart
 - create an user account
 
 ---
