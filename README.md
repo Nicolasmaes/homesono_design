@@ -187,5 +187,6 @@ A[USER_ADMIN]-->|Log in| B(Access the dashboard)
     B--> G(Manage the shop)
 ```
 #
+# Figma sketch
+![](roles.jpg)
 
-# Other diagrams
