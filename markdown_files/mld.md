@@ -1,8 +1,7 @@
 ```mermaid
 classDiagram
 
-        users_roles  --> users : gets PK from
-        users_roles  --> roles : gets PK from
+        users  --> roles : gets PK from
         categories_products  --> products : gets PK from
         categories_products  --> categories : gets PK from
         bookings  --> users : gots PK from
@@ -21,15 +20,11 @@ classDiagram
         USR_ADDRESS_USR
         USR_ZIPCODE_USR
         USR_CITY_USR
-        USR_ROLE_USR
+        USR_ROLE_ROL_FK
     }
     class roles{
         ROL_ID_ROL_PK
         ROL_ROLE_ROL
-    }
-    class users_roles{
-        URO_ID_USR_FK
-        URO_ID_ROL_FK
     }
     class products{
         PRO_ID_PRO_PK
