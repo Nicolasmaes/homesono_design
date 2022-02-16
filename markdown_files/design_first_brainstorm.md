@@ -53,8 +53,8 @@
 - all visitor account privileges above
 - access the confirmation/payment section
 - receive email confirmation
-- cancel or edit his reservation
-- leave reviews after the rent
+- edit or cancel his reservation
+- leave reviews after the rental
 
 ---
 
@@ -99,3 +99,11 @@
 - user shopping cart (products with date of booking)
 
 ---
+
+## To-do
+
+- [ ]  check several UI kit to choose the perfect one (Ionic, Primefaces...)
+- [ ]  Check and try to enjoy Flutter with Dart
+- [ ]  Start to draw some mockup for mobile and desktop
+- [ ]  Gather everything I did at APRR in one place
+- [ ]  Remove table users_roles and duplicated arrows in MCD MLD

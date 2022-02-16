@@ -15,8 +15,8 @@
 # 
 
  # First brainstorm
-- [My project on Notion, easier to read and edit](https://nicolasmaesfr.notion.site/HomeSono-32fc326f03b54eed987b3ba9d79fd54c)
-- [the markdown on GitLab](markdown_files/design_first_brainstorm.md)
+- [On Notion, easier to read and edit](https://nicolasmaesfr.notion.site/HomeSono-32fc326f03b54eed987b3ba9d79fd54c)
+- [The markdown on GitLab](markdown_files/design_first_brainstorm.md)
 #
 
 # Diagrams
@@ -88,8 +88,8 @@ classDiagram
 ```mermaid
 classDiagram
 
-        users_roles  --> users : gets PK from
         users_roles  --> roles : gets PK from
+        users_roles  --> users : gets PK from
         categories_products  --> products : gets PK from
         categories_products  --> categories : gets PK from
         bookings  --> users : gots PK from
