@@ -1,12 +1,13 @@
+# MLD
 ```mermaid
 classDiagram
 
-        users  --> roles : gets PK from
-        categories_products  --> products : gets PK from
-        categories_products  --> categories : gets PK from
-        bookings  --> users : gots PK from
-        bookings  --> products : gets PK from
-        reviews  --> bookings : gets PK from
+        users  -- roles : gets PK from
+        categories_products  -- products : gets PK from
+        categories_products  -- categories : gets PK from
+        bookings  -- users : gots PK from
+        bookings  -- products : gets PK from
+        reviews  -- bookings : gets PK from
 
 
     class users{

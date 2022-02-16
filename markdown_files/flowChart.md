@@ -1,3 +1,4 @@
+# Flow Chart
 ```mermaid
 graph TD
     A[USER_VISITOR] --> B(Access the app)
@@ -25,3 +26,7 @@ A[USER_ADMIN]-->|Log in| B(Access the dashboard)
     B--> F(Get message from USERS)
     B--> G(Manage the shop)
 ```
+#
+# Figma sketch
+![](../roles.jpg)
+

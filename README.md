@@ -24,12 +24,10 @@
 ```mermaid
 classDiagram
 
-    Users -->  "1..1" Users_roles : has
-    Bookings --> "1..*" Products : contains
-    Bookings --> "1..1" Users : is made by
-    Reviews --> "1..1" Users : is made by
-    Users  --> "1..*" Bookings : can make
-    Users  --> "1..*" Reviews : can make
+    Users "0..*" -->  "0..1" Users_roles : has
+    Bookings "0..1"--> "1..*" Products : contains
+    Users  "1..1" --> "1..*" Bookings : can make
+    Users  "1..1" --> "1..*" Reviews : can make
     Products "0..*" -->  "1..*" Categories : belongs
 
     class Users{
@@ -88,13 +86,12 @@ classDiagram
 ```mermaid
 classDiagram
 
-        users_roles  --> roles : gets PK from
-        users_roles  --> users : gets PK from
-        categories_products  --> products : gets PK from
-        categories_products  --> categories : gets PK from
-        bookings  --> users : gots PK from
-        bookings  --> products : gets PK from
-        reviews  --> bookings : gets PK from
+        users  -- roles : gets PK from
+        categories_products  -- products : gets PK from
+        categories_products  -- categories : gets PK from
+        bookings  -- users : gots PK from
+        bookings  -- products : gets PK from
+        reviews  -- bookings : gets PK from
 
 
     class users{
@@ -108,15 +105,11 @@ classDiagram
         USR_ADDRESS_USR
         USR_ZIPCODE_USR
         USR_CITY_USR
-        USR_ROLE_USR
+        USR_ROLE_ROL_FK
     }
     class roles{
         ROL_ID_ROL_PK
         ROL_ROLE_ROL
-    }
-    class users_roles{
-        URO_ID_USR_FK
-        URO_ID_ROL_FK
     }
     class products{
         PRO_ID_PRO_PK
