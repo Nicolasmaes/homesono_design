@@ -1,5 +1,7 @@
 # HomeSono
 
+HomeSono is an app and website where people will rent some microphones, speakers, headphones, mix table and everything we need for a party, a wedding...
+
 ## [Training roadmap](https://gitlab.com/ofp-oc-cda2/ressources/-/blob/main/Formation/Programme.md)
 ## [Directive](https://gitlab.com/ofp-oc-cda2/ressources/-/blob/main/Formation/Fil%20rouge.md#livrables)
 #
@@ -182,5 +184,5 @@ A[USER_ADMIN]-->|Log in| B(Access the dashboard)
 ```
 #
 # Figma sketch
-![](roles.jpg)
+[![roles.jpg](https://i.postimg.cc/gc1J26sx/roles.jpg)](https://postimg.cc/6TLwHqDK)
 
