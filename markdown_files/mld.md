@@ -5,7 +5,7 @@ classDiagram
         users  -- roles : gets PK from
         categories_products  -- products : gets PK from
         categories_products  -- categories : gets PK from
-        bookings  -- users : gots PK from
+        bookings  -- users : gets PK from
         bookings  -- products : gets PK from
         reviews  -- bookings : gets PK from
 
@@ -30,7 +30,6 @@ classDiagram
     class products{
         PRO_ID_PRO_PK
         PRO_NAME_PRO
-        PRO_CATEGORY_CPR
         PRO_DESC_PRO
         PRO_PICTURES_PRO
         PRO_RATE_PRO
