@@ -11,10 +11,11 @@
 ## Stack
 
 - React (front-end development)
-- JavaScript (Back-end, API, maybe Java instead)
+- Java (Back-end, API)
 - MySQL (database)
 - Ionic (UI kit)
 - React Native or Electron (framework for mobile app)
+- maybe FLutter
 
 ---
 
@@ -26,6 +27,7 @@
 - Notion (design and brainstorm)
 - Gitlab (code storage and versioning)
 - Docker (container)
+- Stripe (payment)
 
 ---
 
@@ -106,4 +108,3 @@
 - [ ]  Check and try to enjoy Flutter with Dart
 - [ ]  Start to draw some mockup for mobile and desktop
 - [ ]  Gather everything I did at APRR in one place
-- [ ]  Remove table users_roles and duplicated arrows in MCD MLD
