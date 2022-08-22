@@ -1,6 +1,6 @@
 # Journal de bord
 
-## Mise à jour le 14/04022
+## Mise à jour le 14/04/022
 
 Cette semaine voici où en est le projet : 
 
