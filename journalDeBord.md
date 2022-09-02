@@ -72,7 +72,7 @@ avoir des notes de powerpoint pendant la diffusion
         
 Si je veux faire une verif par mail lors de l'inscription sur le site, est-ce que je peux : 
 
-lors du signin, creer un nombre de 6 chiffres aleatoire, le stocker dans un champ "code" dans la table user
+lors du signup, creer un nombre de 6 chiffres aleatoire, le stocker dans un champ "code" dans la table user
 dans la table user, avoir aussi un champ "compteVerifie", qui est un booleen, à false
 envoyer le code par mail
 rediriger vers une page disant : merci de rentrer le code que nous venons de vous envoyer par mail
@@ -98,3 +98,5 @@ Le token est rempli d'information qui me semble important de voir figurer dans l
 dans le front tout est pret pour avoir un crud hyper fonctionnel sur les tables
 tout est pret egalement pour afficher ou non des choses selon le role de l'utilisateur
 tout est pret pour travailler du css hyper precisement et a ma facon (faire du scss dans chaque component)
+
+commencer à regarder du cote de docker
