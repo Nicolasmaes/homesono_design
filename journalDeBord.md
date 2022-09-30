@@ -100,3 +100,121 @@ tout est pret egalement pour afficher ou non des choses selon le role de l'utili
 tout est pret pour travailler du css hyper precisement et a ma facon (faire du scss dans chaque component)
 
 commencer à regarder du cote de docker
+
+cours sql de Grafikart : voir les vues, les triggers et les requetes recursives
+
+parler des champs de la table user qui ont changé de nom, car je voulais respecter la gestion de JWT avec spring (champ username qui est verifié etc...)
+
+la table de joinutre users_roles a disparu car elle n'etait pas pertinente, finalement c'est un champs role dan sla table user qui est bien sur la plupart du temps à role : USER
+
+depuis react, et le front end en general, il est impossible d'obtenir le path complet d'un fichier lors d'un input type="file"
+pour des raisons de securite, on obitne toujours C:\fakepath\image.jpg
+
+Le but est donc simplement d'upload le file, pas d'en connaitre le chemin complet
+
+En java, je dois également comprnedre comment passer du multipartfile reçu, à l'instertion en base du fichier avec le type mediumblob.
+Probablement le FileSystemStorageService à revoir car lui il stocke dans un dossier predéfini par moi-même, et pas en base
+
+installer sonarlint
+
+1 seule table file, 
+cat on retrouve les medias en faisant des get sur els entites
+en revanche ils era compliqué depuis la table files de savoir quel media appartient a quelle entite (une categorie ? un user ?)
+mais ce get sur les files n'arrivera jamais
+
+faire un dockerfile pour deployer l'API Java Spring
+build,
+créer le jar
+executer le java -jar
+
+maquette
+
+test 
+
+Réesseayer de faire marcher la modal sans typescript, sans les types
+
+
+on se passe donc de la foction whoami() dans le back
+
+generer l'API dans le java directement
+
+a implementer encore
+
+decoder le token dans le front, c'est fait 
+
+il s'agit ici de verifier que l'heure d'expiration du token est bien postèrieure à l'heure actuelle, 
+
+je fais ça direcement dans app. js pour que cette vérif se fasse tout au long de l'app
+
+
+edit : ce n'est pas possible, la page APP et le componant app.js n'ont pas vraiment de vue donc impssible d'utiliser les lifecycle method d'Ionic.
+
+mais pas securité j'apprends également à implement la fin de cette verification piur ne pas qu'elle s'execute à l'infini
+(dans le cas ou je fais une autre verification dans un composant qui a une duree de vie limlité)
+
+parler de la fonction componentDidMount() componentWillUnmount() 
+qui sont sont finalement utilisés comme ça dans le useffect : 
+    useEffect(() => {
+        // Anything in here is fired on component mount.
+        return () => {
+            // Anything in here is fired on component unmount.
+        }
+    }, [])
+
+    https://robertmarshall.dev/blog/componentwillunmount-functional-components-react/
+
+    mais ce useffect a un probleme, il fonctionne avec un router de ce genre (v5.2.0) : 
+        <BrowserRouter>
+      <Header />
+      <Switch>
+        <Route path="/" component={HomePage} exact />
+        <Route path="/contact" component={ContactPage} />
+      </Switch>
+    </BrowserRouter>
+    https://www.freecodecamp.org/news/common-mistakes-react-developers-make-and-how-to-fix-them/
+
+    or moi avec ionic j'ai ce genre de router : 
+     <IonRouterOutlet id="main">
+            <Route exact path="/accueil">
+              <Accueil />
+            </Route>
+            <Route exact path="/categories">
+              <Categories />
+            </Route>
+            <Route exact path="/categorie/:id">
+              <Categorie />
+            </Route>
+            <Route exact path="/">
+              <Redirect to="/accueil" />
+            </Route>
+    </IonRouterOutlet>
+
+https://forum.ionicframework.com/t/ionrouteroutlet/189545
+
+donc Ionic ne fais jamais de unmount à ses composants : donc il faut utiliser leur fonction (lifecycle methods): 
+https://ionicframework.com/docs/react/lifecycle
+
+ ionViewWillEnter() {
+    console.log('ionViewWillEnter event fired');
+  }
+
+  ionViewWillLeave() {
+    console.log('ionViewWillLeave event fired');
+  }
+
+  ionViewDidEnter() {
+    console.log('ionViewDidEnter event fired');
+  }
+
+  ionViewDidLeave() {
+    console.log('ionViewDidLeave event fired');
+  }
+
+  donc pour la suite de développement front je n'utiliserai plus use effect car me concenrant il ne s'executera qu'au premier affichage du composant
+
+  https://programmingwithswift.com/how-to-compare-dates-with-typescript/
+  pour compaerer deux dates, en JS avec des format ISO
+
+  utilisation  de sonarlint, comparer le code de 2009 d'APRR et le mien sur le projet
+
+  utilisation et configuration de prettier rc pour format on save
