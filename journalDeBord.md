@@ -218,3 +218,6 @@ https://ionicframework.com/docs/react/lifecycle
   utilisation  de sonarlint, comparer le code de 2009 d'APRR et le mien sur le projet
 
   utilisation et configuration de prettier rc pour format on save
+
+
+  pour les tests, en profiter pour montrer ma collection postman complète
